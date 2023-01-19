@@ -1,0 +1,26 @@
+CREATE TABLE clothingstore (
+id INTEGER PRIMARY KEY, 
+name TEXT, 
+color TEXT, 
+size TEXT, 
+price INTEGER);
+
+INSERT INTO clothingstore VALUES (1, "Flower Blouse", "white", "small", 12.99); 
+INSERT INTO clothingstore VALUES (2, "Cargo pants", "black", "large", 40.00);
+INSERT INTO clothingstore VALUES (3, "Cardigan", "Pink", "medium", 15.00);
+INSERT INTO clothingstore VALUES (4, "Tank Tops", "multicolor", "medium", 10);
+INSERT INTO clothingstore VALUES (5, "Sundress", "yellow", "small", 25);
+INSERT INTO clothingstore VALUES (6, "Headscarf", "black", "large", 11);
+INSERT INTO clothingstore VALUES (7, "T-Shirt", "grey", "medium", 10);
+INSERT INTO clothingstore VALUES (8, "Socks", "white", "Stretchy", 7.99);
+INSERT INTO clothingstore VALUES (9, "Jeans", "blue", "skinny", 50);
+INSERT INTO clothingstore VALUES (10, "Hoodie", "purple", "large", 40);
+INSERT INTO clothingstore VALUES (11, "Sweatpants", "grey", "X-Large", 30);
+INSERT INTO clothingstore VALUES (12, "Jean Jacket", "Light Blue", "Large", 45);
+INSERT INTO clothingstore VALUES (13, "Leggings", "Green", "Medium", 20);
+INSERT INTO clothingstore VALUES (14, "Corset", "Red", "Small", 55);
+INSERT INTO clothingstore VALUES (15, "Dress", "Rainbow", "Medium", 60);
+
+SELECT * FROM clothingstore ORDER BY price ASC;
+
+SELECT MAX(price) FROM clothingstore;
